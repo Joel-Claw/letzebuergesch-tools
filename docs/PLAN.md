@@ -6,7 +6,7 @@
 - [x] Identify gaps in tooling for education
 - [x] Identify academic research that could be applied
 - [ ] Contact ZLS about orthography rules availability (machine-readable format?)
-- [ ] Contact spellchecker.lu (Michel Weimerskirch) about project collaboration
+- [x] ~~Contact spellchecker.lu (Michel Weimerskirch) about project collaboration~~ ZLS owns it now, no need to contact him
 - [ ] Contact Alistair Plum (Uni.lu) about LuxBank/spellux integration
 
 ## Phase 1: Foundation Tools
