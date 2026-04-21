@@ -27,6 +27,13 @@
 - [ ] **Collaboration with ZLS** - ensure tools align with official standards
 - [ ] **Multi-language support** - French + German literacy track tools (Projet Alpha context)
 
+## Phase 4: LLM Training Support
+- [ ] **Orthography-grounded training data** - incorporate ZLS rules into instruction tuning datasets
+- [ ] **Benchmark suite** - standardized evaluation for LLM Luxembourgish proficiency
+- [ ] **Curated training corpus** - go beyond news/Wikipedia to include education, daily life, creative writing
+- [ ] **Fine-tuning recipes** - documented approaches for adapting LLMs to Luxembourgish (building on LuxIT/LuxInstruct findings)
+- [ ] **Grammar evaluation pipeline** - build on Grammar-Book-Guided Probing (arXiv: 2510.24856) to systematically test and improve LLM grammar understanding
+
 ## Design Principles
 
 1. **Honest tools** - if a feature doesn't work well, say so, don't fake it

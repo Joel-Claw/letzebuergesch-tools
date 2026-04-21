@@ -17,11 +17,14 @@ This is early stage. The research phase is documenting what exists, what's missi
 | Tool | What It Does | Gaps |
 |------|-------------|------|
 | [ZLS / Sproochmaschinn.lu](https://sproochmaschinn.lu) | Speech-to-text + text-to-speech | Works best with correct spelling, no writing support |
-| [spellchecker.lu](https://spellchecker.lu) | HunSpell orthography checker | No grammar checking, last updated 2023, no education layer |
+| [spellchecker.lu](https://spellchecker.lu) | HunSpell orthography checker (ZLS-owned since 2023) | No grammar checking, CC0 word list release pending, GitHub repo stale because dev moved to ZLS |
 | [LOD](https://www.lod.lu) | Official multilingual dictionary with API | Dictionary only, no educational tools built on top |
 | [LuxBank](https://aclanthology.org/2024.tlt-1.4/) | First UD treebank for Luxembourgish | Research artifact, not packaged for use |
 | [spellux](https://github.com/questoph/spellux) | Text normalization | Not deployed as a usable tool |
 | [LuxemBERT](https://orbilu.uni.lu/handle/10993/51815) | BERT model for Luxembourgish | Research model, no downstream tools |
+| [LuxIT](https://arxiv.org/abs/2510.24434) | 59k instruction tuning pairs (monolingual) | Mixed fine-tuning results, research artifact |
+| [LuxInstruct](https://huggingface.co/datasets/fredxlpy/LuxInstruct) | Cross-lingual instruction tuning dataset | Research artifact, not production pipeline |
+| [LUXMT](https://arxiv.org/abs/2602.15506) | GEMMA 3 27B fine-tuned for LB→FR/EN translation | Single-purpose, no general LLM training pipeline |
 
 ### Identified Gaps
 
@@ -31,6 +34,8 @@ This is early stage. The research phase is documenting what exists, what's missi
 4. **No educational integration** of existing tools into classroom-usable materials
 5. **No writing support** that helps people write correct Luxembourgish, not just check after the fact
 6. **LLM grammar understanding is weak** for Luxembourgish (see [Grammar-Book-Guided Probing paper](https://arxiv.org/abs/2510.24856))
+7. **No standardized LLM training pipeline** for Luxembourgish (LuxIT and LuxInstruct exist but show mixed results, not production-ready)
+8. **No benchmark suite** for evaluating LLM Luxembourgish proficiency
 
 ## Goals
 

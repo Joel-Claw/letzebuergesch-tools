@@ -37,15 +37,16 @@
 ### spellchecker.lu
 - **Website:** https://spellchecker.lu (online checker)
 - **Dictionary API:** https://dictionary.spellchecker.lu/ (thesaurus + manager)
-- **Creator:** Michel Weimerskirch
+- **Creator:** Michel Weimerskirch (founded 2006 as private initiative)
 - **GitHub:** https://github.com/spellchecker-lu/dictionary-lb-lu (23 stars, 2 forks)
 - **What it is:** HunSpell dictionary + MyThes thesaurus for Luxembourgish
 - **Thesaurus:** th_lb_LU_v2.idx has 12'804 entries (seen in GitHub)
 - **Available as:** online checker, LibreOffice extension, browser extension
-- **Status:** GitHub last updated January 2023 (may be stale/no active development)
-- **License:** "Other" (no standard OSS license asserted)
+- **Status:** TAKEN OVER BY ZLS in 2023. GitHub repo appears stale (Jan 2023) because development moved to ZLS. Relaunched with fresh look for Rentrée 2023.
+- **License:** Word list to be released under CC0 (announced Sep 2023, pending final review)
 - **1 open issue on GitHub**
-- **History:** around since 2006-2011, one person project
+- **History:** Founded 2006 by Weimerskirch. 2019: first productive contacts with ZLS for orthography updates. 2023: ZLS officially took over the platform. Completes ZLS tool portfolio alongside LOD and Schreifmaschinn.
+- **New app version** announced for end of 2023
 
 ### LOD (Lëtzebuerger Online Dictionnaire)
 - **Website:** https://www.lod.lu
@@ -58,6 +59,31 @@
 - **Key resource for any language tooling project**
 
 ### Academic NLP Research
+
+#### LuxIT (Oct 2025)
+- First monolingual instruction tuning dataset for Luxembourgish
+- Authors: Julian Valline, Cédric Lothritz, Jordi Cabot (LIST)
+- arXiv: 2510.24434
+- 59'242 instruction-answer pairs synthesized from RTL.lu + Wikipedia Luxembourgish articles
+- Used DeepSeek-R1-0528 for generation (best Luxembourgish proficiency)
+- Quality assurance via LLM-as-judge approach
+- Fine-tuning on LuxIT showed mixed results across different models
+- **Critical for LLM training efforts**
+
+#### LuxInstruct (Oct 2025)
+- First large-scale cross-lingual instruction tuning dataset for Luxembourgish
+- Authors: Fred Philippy, Laura Bernardy, Siwen Guo, Jacques Klein, Tegawendé F. Bissyandé (SnT, Uni.lu)
+- arXiv: 2510.07074
+- HuggingFace: https://huggingface.co/datasets/fredxlpy/LuxInstruct
+- **Cross-lingual approach (different from LuxIT's monolingual approach)**
+- **Critical for LLM training efforts**
+
+#### LUXMT (Feb 2026)
+- Machine translation system based on GEMMA 3 27B
+- Fine-tuned for Luxembourgish → French and English translation
+- Author: Nils Rehlinger (Uni.lu)
+- arXiv: 2602.15506
+- **Demonstrates viable LLM fine-tuning for Luxembourgish**
 
 #### LuxBank (Nov 2024)
 - First Universal Dependency Treebank for Luxembourgish
@@ -177,11 +203,19 @@
 
 ## Identified Gaps (What's Missing)
 
+### For LLMs Learning Luxembourgish
+1. **No standardized training data pipeline** - LuxIT and LuxInstruct exist but are research artifacts, not production pipelines
+2. **Fine-tuning results are mixed** - LuxIT showed varying performance across models, no clear recipe yet
+3. **Grammar understanding is weak** - Grammar-Book-Guided Probing (Oct 2025) showed LLMs struggle with morphology and syntax, especially minimal pairs
+4. **No benchmark suite** - no standardized way to evaluate LLM Luxembourgish proficiency (LuxIT used language proficiency exams, ad hoc)
+5. **Training data is news/Wikipedia-heavy** - Luxembourgish in education, daily life, and creative writing is underrepresented
+6. **No orthography-grounded training** - ZLS orthography rules not systematically included in training data
+
 ### For Luxembourgish as Written Language
 1. **No real grammar checker** - spellchecker.lu only does orthography (HunSpell), not syntax/agreement
 2. **No readability scorer** - no way for teachers to assess if text is appropriate for Cycle 1.2 vs Cycle 4
 3. **No graded word lists** - no vocabulary lists aligned with school cycles
-4. **spellchecker.lu stale** - last GitHub update Jan 2023, may not cover recent orthography changes
+4. **spellchecker.lu GitHub stale** - development moved to ZLS (takeover 2023), word list CC0 release pending
 5. **No educational integration layer** - ZLS tools exist but aren't packaged for classroom use
 6. **TTS depends on correct spelling** - Liesmaschinn explicitly says results improve with correct orthography
 7. **LLM grammar understanding is weak** - can't rely on LLMs alone for grammar checking (need rule-based + ML hybrid)
@@ -208,13 +242,16 @@
 ---
 
 ## Key People & Institutions
-- **ZLS** - official language authority, best orthography reference
-- **Michel Weimerskirch** - spellchecker.lu creator
+- **ZLS** - official language authority, best orthography reference, now owns spellchecker.lu
+- **Michel Weimerskirch** - spellchecker.lu creator (2006), platform transferred to ZLS in 2023
 - **Alistair Plum** (Uni.lu) - LuxBank, text normalization, core NLP researcher
 - **Anne-Marie Lutgen** (Uni.lu) - text normalization
 - **Christoph Purschke** (Uni.lu) - linguistics, text normalization
 - **Barbara Plank** (LMU Munich / Uni.lu) - NLP, text normalization
 - **Claudine Kirsch** (Uni.lu) - multilingual ECEC, teacher professional development
+- **Julian Valline, Cédric Lothritz, Jordi Cabot** (LIST) - LuxIT instruction tuning dataset
+- **Fred Philippy, Laura Bernardy** (SnT, Uni.lu) - LuxInstruct cross-lingual instruction tuning
+- **Nils Rehlinger** (Uni.lu) - LUXMT translation system
 - **Marc Schmit** - Centre de Logopédie, speech therapy perspective on literacy
 - **Charel Schmit** - Ombudsman for children and young people
 - **Patrick Remakel** - SNE union president
