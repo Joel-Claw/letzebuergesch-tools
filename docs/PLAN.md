@@ -11,6 +11,7 @@ Existing tools (ZLS speech-to-text, spellchecker.lu orthography, LOD dictionary)
 - [x] Document Projet Alpha context (positive + negative criticism)
 - [x] Identify gaps in tooling for education
 - [x] Identify academic research that could be applied
+- [x] Build lëtz spellchecker + LLM context generator (see Joel-Claw/letz on GitHub)
 - [ ] Contact ZLS about orthography rules availability (machine-readable format?)
 - [ ] Contact Alistair Plum (Uni.lu) about LuxBank/spellux
 
