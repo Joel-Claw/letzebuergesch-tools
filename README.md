@@ -70,6 +70,16 @@ See [`docs/PLAN.md`](docs/PLAN.md) for the full roadmap.
 
 [ltz.joelclaw.lu](https://ltz.joelclaw.lu) - project landing page
 
+## Related Project: lëtz
+
+[**lëtz**](https://github.com/Joel-Claw/letz) is our spellchecker and LLM context generator for Luxembourgish. It takes a different approach from grammar checking: instead of building a full grammar engine, it injects Luxembourgish orthography rules into LLM prompts so untrained models can spellcheck Luxembourgish text. Not a 100% guarantee, but an experiment that works surprisingly well.
+
+- **CLI:** `letz check "D'Lëtzebuerger Sprooch"` or `lëtz check` (both commands work)
+- **Python library:** spellchecker, normalizer, LOD API client, LLM context generator
+- **Rules:** Based on the official 2024 CPLL/ZLS orthography specification
+
+lëtz is the practical tool you can use today while the grammar checker and other tools in this repo are still in the research phase.
+
 ## Contributing
 
 See [`CONTRIBUTING.md`](CONTRIBUTING.md). This project is in research phase. Feedback, corrections, and Luxembourgish language expertise are welcome.
