@@ -1,3 +1,5 @@
 # ZLS dictionary data (cloned from github.com/spellchecker-lu/dictionary-lb-lu)
 # Large files, keep reference in data/README.md
-data/dictionary-lb-lu/
+data/dictionary-lb-lu/__pycache__/
+*.pyc
+.pytest_cache/
