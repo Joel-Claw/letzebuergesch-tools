@@ -12,8 +12,10 @@ Existing tools (ZLS speech-to-text, spellchecker.lu orthography, LOD dictionary)
 - [x] Identify gaps in tooling for education
 - [x] Identify academic research that could be applied
 - [x] Build lëtz spellchecker + LLM context generator (see Joel-Claw/letz on GitHub)
-- [ ] Contact ZLS about orthography rules availability (machine-readable format?)
-- [ ] Contact Alistair Plum (Uni.lu) about LuxBank/spellux
+- [x] Contact ZLS about orthography rules availability (machine-readable format?) — Done May 2026. Word list available, rules not machine-readable yet. Educational tooling redirected to INLL.
+- [ ] Contact INLL about educational tooling collaboration (ZLS redirect, July 2026)
+- [x] Contact Alistair Plum (Uni.lu) about LuxBank/spellux — sent April 2026, no reply, following up July 2026
+- [x] Download and integrate ZLS spellchecker word list — done July 2026, see `data/dictionary-lb-lu/`
 
 ## Phase 1: Foundation Tools
 - [ ] **Grammar checker** - rule-based syntax and agreement checking using ZLS orthography rules. Not LLM-dependent. Catches dative case errors, verb conjugation, article agreement.

@@ -22,7 +22,7 @@ This is early stage (research phase). We're documenting what exists, what's miss
 | Tool | What It Does | What It Doesn't Do |
 |------|-------------|-------------------|
 | [ZLS / Sproochmaschinn.lu](https://sproochmaschinn.lu) | Speech-to-text + text-to-speech | No writing support, no grammar checking |
-| [spellchecker.lu](https://spellchecker.lu) | HunSpell orthography checker (ZLS-owned since 2023) | Spelling only, no grammar. CC0 word list pending |
+| [spellchecker.lu](https://spellchecker.lu) | HunSpell orthography checker (ZLS-owned since 2023) | Spelling only, no grammar. Word list available on [data.public.lu](https://data.public.lu/fr/datasets/letzebuergesch-wierderlescht/) |
 | [LOD](https://www.lod.lu) | Official multilingual dictionary with API | Dictionary only, no educational tools |
 | [LuxBank](https://aclanthology.org/2024.tlt-1.4/) | First UD treebank for Luxembourgish | Research artifact, not packaged for use |
 | [spellux](https://github.com/questoph/spellux) | Text normalization | Not deployed as a usable tool |
@@ -51,7 +51,7 @@ Key findings:
 - Grammar-Book-Guided Probing (Oct 2025) shows LLMs are weak at Luxembourgish grammar
 - LuxIT 59'242 instruction pairs show mixed fine-tuning results
 - LUXMT (GEMMA 3 27B) proves viable fine-tuning for translation works
-- No CC0 word list release yet (announced Sep 2023, pending ZLS review)
+- ZLS spellchecker word list is publicly available at [data.public.lu](https://data.public.lu/fr/datasets/letzebuergesch-wierderlescht/) (confirmed May 2026). 94'828 base forms, 350'372 conjugated forms. See `data/dictionary-lb-lu/`
 
 ## Project Plan
 

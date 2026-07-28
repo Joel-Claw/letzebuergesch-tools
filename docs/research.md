@@ -215,7 +215,7 @@
 1. **No real grammar checker** - spellchecker.lu only does orthography (HunSpell), not syntax/agreement
 2. **No readability scorer** - no way for teachers to assess if text is appropriate for Cycle 1.2 vs Cycle 4
 3. **No graded word lists** - no vocabulary lists aligned with school cycles
-4. **spellchecker.lu GitHub stale** - development moved to ZLS (takeover 2023), word list CC0 release pending
+4. **spellchecker.lu word list now public** - available on [data.public.lu](https://data.public.lu/fr/datasets/letzebuergesch-wierderlescht/) since Jan 2026, confirmed by ZLS May 2026. 94'828 base forms + 350'372 conjugated. Cloned to `data/dictionary-lb-lu/`.
 5. **No educational integration layer** - ZLS tools exist but aren't packaged for classroom use
 6. **TTS depends on correct spelling** - Liesmaschinn explicitly says results improve with correct orthography
 7. **LLM grammar understanding is weak** - can't rely on LLMs alone for grammar checking (need rule-based + ML hybrid)
