@@ -13,19 +13,19 @@ Existing tools (ZLS speech-to-text, spellchecker.lu orthography, LOD dictionary)
 - [x] Identify academic research that could be applied
 - [x] Build lëtz spellchecker + LLM context generator (see Joel-Claw/letz on GitHub)
 - [x] Contact ZLS about orthography rules availability (machine-readable format?) — Done May 2026. Word list available, rules not machine-readable yet. Educational tooling redirected to INLL.
-- [ ] Contact INLL about educational tooling collaboration (ZLS redirect, July 2026)
-- [x] Contact Alistair Plum (Uni.lu) about LuxBank/spellux — sent April 2026, no reply, following up July 2026
+- [x] Contact INLL about educational tooling collaboration — sent July 28, 2026 to communication@inll.lu. Awaiting reply.
+- [x] Contact Alistair Plum (Uni.lu) about LuxBank/spellux — sent April 2026, no reply. Follow-up sent July 28, 2026. Awaiting reply.
 - [x] Download and integrate ZLS spellchecker word list — done July 2026, see `data/dictionary-lb-lu/`
 
-## Phase 1: Foundation Tools (In Progress)
+## Phase 1: Foundation Tools (CI Added)
 - [x] **Text processing** - tokenization, sentence splitting, normalization (`src/common/text.py`)
 - [x] **Word list loader** - ZLS dictionary loader with POS/gender tags (`src/wordlist/loader.py`)
 - [x] **Grammar checker** - rule-based syntax and agreement checking using ZLS dictionary. Detects article-noun gender mismatch, dative case errors after prepositions, unknown words, verb placement (V2). (`src/grammar/checker.py` + `src/grammar/rules/`)
 - [x] **Readability scorer** - CEFR-aligned text difficulty scoring using word frequency, sentence length, type-token ratio. (`src/readability/scorer.py`)
 - [x] **Tests** - 41 tests covering all modules (`tests/`)
 - [ ] **Graded word lists** - word lists aligned with the 4 fundamental education cycles (C1: ages 3-5, C2: ages 6-7, C3: ages 8-9, C4: ages 10-11). Needs teacher input.
-- [ ] **Text normalization** - variant to standard Luxembourgish normalization (build on spellux/Lutgen et al. research)
-- [ ] **API and web interface** - all tools accessible via API and a simple web UI
+- [ ] **Text normalization** - variant to standard Luxembourgish normalization (build on spellux/Lutgen et al. research) — NEXT
+- [ ] **API and web interface** - all tools accessible via API and a simple web UI — after normalization module
 
 ## Phase 2: Education Tools
 - [ ] **Teacher dashboard** - single interface for classroom use, no logins or API keys required
