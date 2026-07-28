@@ -1,16 +1,7 @@
 """Tests for the grammar checker."""
 
 import pytest
-from src.wordlist.loader import WordList
 from src.grammar.checker import GrammarChecker, GrammarResult
-
-
-@pytest.fixture
-def wordlist():
-    """Load the ZLS dictionary for testing."""
-    return WordList.from_dictionary(
-        "/home/alex/letzebuergesch-tools/data/dictionary-lb-lu"
-    )
 
 
 @pytest.fixture

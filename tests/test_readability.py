@@ -1,15 +1,7 @@
 """Tests for the readability scorer."""
 
 import pytest
-from src.wordlist.loader import WordList
 from src.readability.scorer import ReadabilityScorer
-
-
-@pytest.fixture
-def wordlist():
-    return WordList.from_dictionary(
-        "/home/alex/letzebuergesch-tools/data/dictionary-lb-lu"
-    )
 
 
 @pytest.fixture

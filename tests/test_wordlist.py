@@ -4,13 +4,6 @@ import pytest
 from src.wordlist.loader import WordList, WordInfo
 
 
-@pytest.fixture
-def wordlist():
-    return WordList.from_dictionary(
-        "/home/alex/letzebuergesch-tools/data/dictionary-lb-lu"
-    )
-
-
 class TestWordList:
     def test_load_dictionary(self, wordlist):
         assert len(wordlist) > 50000  # Should have loaded many words
